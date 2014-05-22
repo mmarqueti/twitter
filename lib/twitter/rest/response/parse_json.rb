@@ -12,7 +12,8 @@ module Twitter
           when WHITESPACE_REGEX, nil
             nil
           else
-            JSON.parse(body, :symbolize_names => true)
+            MultiJson.load(body, :symbolize_names => true)
+            # JSON.parse(body, :symbolize_names => true)
           end
         end
 
