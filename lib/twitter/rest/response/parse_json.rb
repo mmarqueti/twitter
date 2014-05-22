@@ -13,7 +13,7 @@ module Twitter
             nil
           else
             # puts body
-            MultiJson.load(body, :symbolize_names => true, :symbolize_keys => true))
+            MultiJson.load(body, :symbolize_names => true, :symbolize_keys => true)
             # JSON.parse(body, :symbolize_names => true)
           end
         end
